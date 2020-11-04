@@ -1,20 +1,28 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-    "outDir": "build/dist",
-    "module": "commonjs",
     "target": "es5",
+    "module": "ESNext",
     "lib": ["es6", "dom"],
-    "sourceMap": true,
     "allowJs": true,
-    "esModuleInterop": true,
     "jsx": "react",
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "strict": false,
+    "resolveJsonModule": true,
     "moduleResolution": "node",
-    "rootDir": "src",
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": false,
-    "strictNullChecks": true
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
+  "types": [
+    "jest",
+    "typePatches"
+  ],
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.ts"
+  ],
   "exclude": [
     "node_modules",
     "build",
@@ -23,8 +31,5 @@
     "webpack",
     "jest",
     "src/reportWebVitals.ts"
-  ],
-  "types": [
-    "typePatches"
   ]
 }
