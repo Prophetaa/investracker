@@ -1,0 +1,35 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "ESNext",
+    "lib": ["es6", "dom"],
+    "allowJs": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "strict": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "types": [
+    "jest",
+    "typePatches"
+  ],
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/reportWebVitals.ts"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+    "linters": {
+       "*.{js,css,scss}": [
+            "npm run lint:fix",
+            "npm run format",
+            "git add"
+        ],
+        "src/**/*.js": ["jest --findRelatedTests"]
+    }
+
+}
